@@ -1,0 +1,10 @@
+<h1>My Notes</h1>
+
+<form action="/notes" method="post">
+  <input type="text" name="new_aha">
+  <input type="submit">
+</form>
+
+<% @notes.each do |note| %>
+  <p><%= note.aha %></p>
+<% end %>
