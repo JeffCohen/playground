@@ -3,6 +3,7 @@ require 'open-uri'
 
 if ARGV.empty?
   puts "Usage: ruby generate_map.rb [address]"
+  exit
 end
 
 address = ARGV.first.gsub(/\s+/,'+')
