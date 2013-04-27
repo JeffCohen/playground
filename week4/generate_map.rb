@@ -6,8 +6,7 @@ if ARGV.empty?
   exit
 end
 
-address = ARGV.first.gsub(/\s+/,'+')
-# encoded = URI.encode(address)
+address = URI.encode(ARGV.first)
 
 geocode_api_url = "http://maps.googleapis.com/maps/api/geocode/json?language=en&address=#{address}&sensor=false"
 
